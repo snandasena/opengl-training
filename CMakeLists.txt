@@ -35,5 +35,7 @@ include_directories(
         "${PROJECT_SOURCE_DIR}/include"
 )
 
-add_executable(inidemo src/main.cpp)
-target_link_libraries(inidemo ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+#add_executable(triangle src/triangle.cpp)
+#target_link_libraries(triangle ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${GLEW_LIBRARIES})
+add_executable(tetrahedren src/tetrahedren.cpp)
+target_link_libraries(tetrahedren ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${GLEW_LIBRARIES})
